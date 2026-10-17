@@ -1,0 +1,33 @@
+# Nmap 7.991 scan initiated Sat Oct 17 17:57:43 2026 as: nmap -p 21,22,80 -sC -sV -oA bounty_hacker_details 10.48.178.44
+Nmap scan report for 10.48.178.44
+Host is up (0.17s latency).
+
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.5
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_Can't get directory listing: PASV failed: 550 Permission denied.
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:192.168.140.88
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 1
+|      vsFTPd 3.0.5 - secure, fast, stable
+|_End of status
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 ec:99:62:03:ef:a0:43:3b:f2:71:f5:47:a5:5b:6d:b0 (RSA)
+|   256 f9:aa:fb:d7:68:17:08:ff:eb:60:c1:34:df:2c:5f:48 (ECDSA)
+|_  256 3a:50:33:35:f5:cc:ea:f0:4e:32:62:0f:89:b0:95:c2 (ED25519)
+80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+|_http-title: Site doesn't have a title (text/html).
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Oct 17 17:58:00 2026 -- 1 IP address (1 host up) scanned in 17.41 seconds

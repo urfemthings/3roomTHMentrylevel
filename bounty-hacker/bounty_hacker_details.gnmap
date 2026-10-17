@@ -1,0 +1,4 @@
+# Nmap 7.991 scan initiated Sat Oct 17 17:57:43 2026 as: nmap -p 21,22,80 -sC -sV -oA bounty_hacker_details 10.48.178.44
+Host: 10.48.178.44 ()	Status: Up
+Host: 10.48.178.44 ()	Ports: 21/open/tcp//ftp//vsftpd 3.0.5/, 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.41 ((Ubuntu))/
+# Nmap done at Sat Oct 17 17:58:00 2026 -- 1 IP address (1 host up) scanned in 17.41 seconds

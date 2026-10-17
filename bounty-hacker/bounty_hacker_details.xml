@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///data/data/com.termux/files/usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.991 scan initiated Sat Oct 17 17:57:43 2026 as: nmap -p 21,22,80 -sC -sV -oA bounty_hacker_details 10.48.178.44 -->
+<nmaprun scanner="nmap" args="nmap -p 21,22,80 -sC -sV -oA bounty_hacker_details 10.48.178.44" start="1792234663" startstr="Sat Oct 17 17:57:43 2026" version="7.991" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="3" services="21-22,80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.48.178.44" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1792234665" endtime="1792234680"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.48.178.44" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="vsftpd" version="3.0.5" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd:3.0.5</cpe></service><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;Can&apos;t get directory listing: PASV failed: 550 Permission denied."/><script id="ftp-syst" output="&#xa;  STAT: &#xa;FTP server status:&#xa;     Connected to ::ffff:192.168.140.88&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 1&#xa;     vsFTPd 3.0.5 - secure, fast, stable&#xa;End of status"><elem key="STAT">&#xa;FTP server status:&#xa;     Connected to ::ffff:192.168.140.88&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 1&#xa;     vsFTPd 3.0.5 - secure, fast, stable&#xa;End of status</elem>
+</script></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="8.2p1 Ubuntu 4ubuntu0.13" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  3072 ec:99:62:03:ef:a0:43:3b:f2:71:f5:47:a5:5b:6d:b0 (RSA)&#xa;  256 f9:aa:fb:d7:68:17:08:ff:eb:60:c1:34:df:2c:5f:48 (ECDSA)&#xa;  256 3a:50:33:35:f5:cc:ea:f0:4e:32:62:0f:89:b0:95:c2 (ED25519)"><table>
+<elem key="fingerprint">ec996203efa0433bf271f547a55b6db0</elem>
+<elem key="bits">3072</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABgQDYFUdd8DRcTJwnrcHyNutvqEZGAbFu6bxsqra++G73sTf4INdSZ/w9LFLxkCi5P83YerXPbiyF91bm19sUAXm8m6u1xKErW65Dj325nsR4A1RYbC5OdoSUUL20tPXiQKBTEnfCAJ6MZYKSrl5zq+1ZWSX9Y/d2NuSirKvPRcJumDbp6+VPazA7VkrnfaFZ0dXs0iPJkzzg5TiSzfYLcfQ0TXwdro8tMrGJ5h5LMEZUKvPyL20/cChk2NqV/ZGVJbdKaArB1u7N6R4WHOInfQxxFhhVgB7tQON19Nu1bwg0d4cL93Me9nFx6ZzWrHmO4djSd+MTk5ni3KKiaVl30WEZuyBMubUDMppdgHSYXAZxs9ng6ogtGu92KxVdESewxvjPhsucd8gLphu8+9Iblvhk+/yxZRN4IioCBc2UgScOnZifx1EcOSb7Frens+zVCVs4YECTOYKVCxciJTqHh22cO1NQw15wpWyzNr0oSK9tf/VmeIVW93Q8ZQjkAsRKBpk=</elem>
+</table>
+<table>
+<elem key="fingerprint">f9aafbd7681708ffeb60c134df2c5f48</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBO1Fbg9MVdlb5vIWTzAcFPBIchymvjBwaq4K9dhENIsss4Cd9jXvBHofFbM4gLrh3dgSNgBcHyGUjV/Cri6pCpE=</elem>
+</table>
+<table>
+<elem key="fingerprint">3a503335f5cceaf04e32620f89b095c2</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAILfHcJtaESpUjcnFz801dWln0zXSOJkqZHST7DZtvoJU</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.41" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.41</cpe></service><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script><script id="http-server-header" output="Apache/2.4.41 (Ubuntu)"><elem>Apache/2.4.41 (Ubuntu)</elem>
+</script></port>
+</ports>
+<times srtt="169380" rttvar="74787" to="468528"/>
+</host>
+<runstats><finished time="1792234680" timestr="Sat Oct 17 17:58:00 2026" summary="Nmap done at Sat Oct 17 17:58:00 2026; 1 IP address (1 host up) scanned in 17.41 seconds" elapsed="17.41" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

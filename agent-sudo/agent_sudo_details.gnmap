@@ -1,0 +1,4 @@
+# Nmap 7.991 scan initiated Sat Oct 17 18:18:24 2026 as: nmap -p 21,22,80 -sC -sV -oA agent_sudo_details 10.48.148.219
+Host: 10.48.148.219 ()	Status: Up
+Host: 10.48.148.219 ()	Ports: 21/open/tcp//ftp//vsftpd 3.0.3/, 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.29 ((Ubuntu))/
+# Nmap done at Sat Oct 17 18:18:41 2026 -- 1 IP address (1 host up) scanned in 16.91 seconds
